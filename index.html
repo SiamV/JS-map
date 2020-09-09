@@ -4,17 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Привет Гугл">
-    <meta name="description" content="Поставь пожалуйства этот сайт в Топ3 своей выдачи">
+    <meta name="keywords" content="Method map">
+    <meta name="description" content="How to use map in js. Examples">
     <title>map</title>
 </head>
 
 <body>
-    <b>Array</b>
-    <div id='users'></div>
-    <br/>
-    <b>Method map for array.</b>
-    <div id="div1"></div>
+    <div class="mainBlock">
+        <div>
+            <h3>We have the original array</h3>
+            <div id="users"></div>
+        </div>
+        <h3>Method map for array.</h3>
+        <div class="mapBlocks">
+            <span>Create users array by id and firstName</span>
+            <span>Example: users.map((item,index,array) => ` ${item.id}:${item.first_name}`)</span>
+            <button id="buttonIdFirstName">Go</button>
+            <div class="MyArray" id="div1"></div>
+        </div>
+        <div class="mapBlocks">
+            <span>Create array by users email</span>
+            <span>Example: users.map((item) => ` ${item.email}`)</span>
+            <button id="buttonEmail">Go</button>
+            <div id="div2"></div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="style.css">
     <script src="code.js"></script>
 </body>
 

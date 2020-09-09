@@ -1,0 +1,25 @@
+.mainBlock {
+    margin-left: 10px;
+    padding: 10 px;
+    font-size: 18px;
+}
+.mainBlock .mapBlocks {
+    margin-bottom: 20px;
+}
+.mainBlock .mapBlocks span {
+    margin-bottom: 5px;
+    display: block;
+}
+.mainBlock .mapBlocks button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.mainBlock .MyArray {
+
+}

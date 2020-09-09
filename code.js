@@ -143,6 +143,18 @@ const users = [{
 let ShowUsers = document.getElementById('users')
 ShowUsers.innerHTML = JSON.stringify(users);
 
-//method map
+//Create users array by id and firstName
+let buttonIdFirstName = document.getElementById('buttonIdFirstName')
 let div1 = document.getElementById("div1")
-div1.innerHTML = users.map((item,index,array) => `${item.id} ${item.first_name}`)
+addNewArrayDiv1 = () => {
+    div1.innerHTML = users.map((item,index,array) => ` ${item.id}:${item.first_name}`)
+}
+buttonIdFirstName.addEventListener('click', addNewArrayDiv1)
+
+//Create users array by email
+let buttonEmail = document.getElementById('buttonEmail')
+let div2 = document.getElementById("div2")
+addNewArrayDiv2 = () => {
+    div2.innerHTML = users.map((item) => ` ${item.email}`)
+}
+buttonEmail.addEventListener('click', addNewArrayDiv2)
